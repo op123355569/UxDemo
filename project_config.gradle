@@ -1,0 +1,25 @@
+ext {
+    configs = [
+            compileSdkVersion : 29,
+            buildToolsVersion : '30.0.3',
+            minSdkVersion     : 21,
+            targetSdkVersion  : 29,
+            versionCode       : 100,
+            versionName       : '1.0.0',
+            MetaDataKeyChannel: '"APP_CHANNEL_KEY"',
+            BuglyAppId        : 'BuglyAppId',
+            BuglyAppKey       : 'BuglyAppKey',
+    ]
+
+    AppTypeName = [
+            ProductionMode : '生产模式',
+            DevelopmentMode: '开发模式',
+    ]
+
+    Zero = "2.5.7"
+
+    libs = [
+            Zero: "com.hg.zero:Zero:$Zero",
+    ]
+
+}

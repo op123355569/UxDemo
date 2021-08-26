@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2E9876</color>
+    <color name="colorPrimaryDark">#27745A</color>
+    <color name="colorAccent">#2EA67F</color>
+
+    <color name="btn_main_p">#4191F5</color>
+
+    <!-- 界面默认背景颜色 -->
+    <color name="main_body_color">#FAFAFA</color>
+
+    <color name="line">#EEEEEE</color>
+
+    <color name="button_disable_color">#909090</color>
+    <color name="button_text_disable_color">#9E9E9E</color>
+</resources>

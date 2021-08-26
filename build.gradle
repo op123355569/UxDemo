@@ -1,0 +1,42 @@
+apply from: "project_config.gradle"
+
+buildscript {
+    ext.kotlin_version = '1.5.21'
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+//        maven {
+//            url SNAPSHOT_REPOSITORY_URL
+//            credentials {
+//                username NEXUS_USERNAME
+//                password NEXUS_PASSWORD
+//            }
+//        }
+        maven {
+            url RELEASE_REPOSITORY_URL
+            credentials {
+                username NEXUS_USERNAME
+                password NEXUS_PASSWORD
+            }
+        }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
